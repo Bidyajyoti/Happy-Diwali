@@ -1,0 +1,104 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    margin-right: 13%;
+}
+
+.diya {
+    display: grid;
+    place-items: center;
+    height: 70vh;
+}
+
+.base {
+    background-color: brown;
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0 0 150px 150px;
+    position: fixed;
+    margin-right: 7.8%;
+}
+
+.flame {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 160px 0;
+    transform: rotate(-45deg);
+    margin-left: 3.3%;
+    margin-top: -70px;
+    opacity: 10;
+    position: fixed;
+    transition: ease-in-out;
+    animation: scale-up 2s infinite;
+}
+
+.f1 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(245, 195, 172);
+    border-radius: 160px 0;
+    margin-left: 6%;
+    margin-top: 45px;
+    position: fixed;
+    transition: ease-in-out;
+    animation: 10s;
+}
+
+.oil {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(216, 126, 7);
+    margin-bottom: -32px;
+    position: relative;
+    margin-top: -65%;
+    z-index: 1;
+    border-radius: 50%;
+    margin-right: 66%;
+}
+
+@keyframes scale-up {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(-45deg) scale(1.05);
+        opacity: 0.7;
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+        margin-right: 0;
+    }
+
+    .base {
+        margin-right: 0;
+    }
+
+    .flame {
+        margin-left: 0;
+    }
+
+    .f1 {
+        margin-left: 0;
+    }
+
+    .oil {
+        margin-right: 0;
+    }
+}
