@@ -4,8 +4,7 @@ Celebrate the festival of lights with this simple HTML and CSS project that disp
 
 ## Preview
 
-![Happy Diwali Diya](demo.png)
-
+![Happy Diwali Diya]
 
 ## Features
 
